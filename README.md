@@ -2,6 +2,21 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Project Features
+
+### Check if User is Registered (Solidity Feature)
+*   Added an `isRegistered(address _addr)` function to the `src/BlockBase.sol` smart contract. This function returns `true` if the provided address is registered in the contract and `false` otherwise.
+*   Implemented corresponding frontend logic in `src/App.js`:
+    *   Added state variables (`addressToCheck`, `checkResult`) to manage input and display results.
+    *   Added an input field for the user to enter an address.
+    *   Added a button to trigger the check.
+    *   Added a display area to show whether the entered address is registered or not.
+    *   Requires recompiling and redeploying the contract, then updating the contract address and ABI in the frontend after adding the Solidity function.
+
+### Display Total Registered Users (JavaScript Feature)
+*   Added a paragraph `<p>Total Registered Users: {people.length}</p>` in `src/App.js` within the main application view (when the user is connected and registered).
+*   This displays the current count of registered users based on the `people` state array, which is loaded from the smart contract.
+
 ## Available Scripts
 
 In the project directory, you can run:
