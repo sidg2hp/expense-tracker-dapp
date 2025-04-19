@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+![Expense Tracker Application Screenshot](images/app-screenshot.png "On-Chain Expense Tracker DApp Interface")
+
+*Caption: Screenshot showing the main interface of the On-Chain Expense Tracker, including the 'Check if Address is Registered' feature and user balances.*
+
 ## Project Features
 
 ### Check if User is Registered (Solidity Feature)
